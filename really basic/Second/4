@@ -1,0 +1,23 @@
+puzzle_price = 2.60
+doll = 3
+bear = 4.10
+minion = 8.20
+truck = 2.00
+
+tour = float(input())
+puzzle_num = int(input())
+dollnum = int(input())
+bearnum = int(input())
+minionnum = int(input())
+trucks = int(input())
+
+total_toy_count = puzzle_num + dollnum + bearnum + minionnum + trucks
+totalprice = puzzle_price * puzzle_num + dollnum *doll + bearnum * bear + minionnum * minion + truck * trucks
+
+
+
+if total_toy_count >= 50:
+    totalprice = totalprice - totalprice * 0.25
+
+forrent = totalprice * 0.10
+totalprice_with_rent = totalprice - forrent #profit
