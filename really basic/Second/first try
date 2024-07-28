@@ -1,0 +1,15 @@
+fnum = int(input())  # for the first input (finish seconds)
+snum = int(input())  # for the second input (finish seconds)
+tnum = int(input())  # for the third input (finish seconds)
+
+total_ = fnum + snum + tnum  # total seconds
+
+minutes = total_ // 60
+seconds = total_ % 60
+
+
+
+if seconds < 10:
+    print(f'{minutes}:0{seconds}')  # if the seconds are < 10 print
+else:
+    print(f'{minutes}:{seconds}')  # else print this
