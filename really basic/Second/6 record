@@ -1,0 +1,16 @@
+record_in_seconds = float(input())
+distance_in_meters = float(input())
+time_in_seconds_for_meter = float(input())
+
+resist_meters = 15
+resist_seconds = 12.5
+
+water_resist_time = distance_in_meters // resist_meters * resist_seconds
+final_ = distance_in_meters * time_in_seconds_for_meter + water_resist_time
+
+
+
+if record_in_seconds > final_:
+    print(f" Yes, he succeeded! The new world record is {final_:.2f} seconds.")
+else:
+    print(f"No, he failed! He was {final_ - record_in_seconds:.2f} seconds slower.")
