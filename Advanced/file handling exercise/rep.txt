@@ -1,0 +1,15 @@
+.css
+- - - t.css
+.html
+- - - home.html
+- - - lool.html
+.js
+- - - nice.js
+.py
+- - - python_is_better.py
+.ts
+- - - really.ts
+.txt
+- - - file1.txt
+- - - rep.txt
+- - - texttry.txt
